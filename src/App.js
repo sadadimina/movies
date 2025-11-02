@@ -13,7 +13,7 @@ function App() {
   const [watchList, setWatchList] = useState([]);
 
   useEffect(() => {
-    fetch("Movies.json")
+    fetch("/movies.json")
       .then((response) => response.json())
       .then((data) => setMovies(data));
   }, []);
